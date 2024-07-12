@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
     <style>
+        *{
+            font-family: montserrat;
+        }
          .card{
-           border: 2px solid black;
+            padding: 2%;
+           border-radius: 10px;
            width: 20%;  
            box-shadow: 3px 3px  4px 2px #000000;
+           padding-left: 20px;
+           background-color: white
         }
         body{
             display: flex;
@@ -17,23 +25,64 @@
             align-items: center;
             height: 100vh;
             border-radius: 10px;
-            padding: 30px;
+            padding: 30px;background-color: aqua;
+            background-image: url(R.jpg);
+            background-size: cover;
+            /*background-image: linear-gradient(0deg, rgb(132, 132, 82), rgb(153, 153, 196), rgb(159, 122, 122));*/
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) ,rgba(15, 14, 14, 0)),
+            url(R.jpg)
         }
+        .form-title{
+            font-family: montserrat;
+
+        }
+        .form-title1{
+            text-align: center;
+        }
+        .text-input{
+            display: black;
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+
+        }
+        .btn{
+            margin: 20px 0;
+            background-color: red;
+            display: black;
+            width: 90%;
+            border-radius: 5px;
+        }
+        .form-link{
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+            display: block;
+        }
+        .register-link{
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
     <div class="card">
-        <h3 class="form-title">Login here</h3>
-        <form>
+        <h3 class="form-title1">Login here</h3>
+        <form class="form-title">
             <label for="email">Email Address</label>
             <input type="email" class="text-input" id="email">
-            <br><br>
+            
 
             <label for="password">password</label>
             <input type="password" class="text-input" id="password">
-            <br><br>
+            
+
+            <a href="#" class="form-link">forgot password</a>
 
             <button class="btn">Submit</button>
+
+            <a href="#" class="form-link  register-link">create account</a>
         </form>
     </div>
     

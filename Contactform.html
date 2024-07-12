@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+        *{
+            font-family: montserrat;
+            color: white;
+        }
+    
+        .card{
+        
+           margin-left: 100px;
+           padding: 2%;
+           border-radius: 10px;
+           width: 30%;  
+           box-shadow: 3px 3px  4px 2px #7c818500;
+           background-color: rgba(70, 95, 131, 0.367)
+        
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 30px;
+            background-image: url(2367875.webp);
+        
+            
+        }
+        .adjustment1{
+            font-family: montserrat;
+            color:solid bold black;
+            font-weight: bolder;
+
+        }
+        .adjustment{
+            text-align: center;
+            text-size-adjust: 30px;
+        }
+        .text-input{
+            display: rgb(10, 10, 10);
+            font-size: 10px solid bold rgb(0, 0, 0);
+            text-size-adjust: 10px;
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 5px 15px;
+            box-sizing: border-box;
+            display: flex;
+        
+
+        }
+        .btn{
+            margin: 20px 0;
+            background-color: rgb(95, 95, 127);
+            display: black;
+            width: 30%;
+            border-radius: 20px;
+            position: center;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2 class="adjustment">CONTACT-US</h2>
+        <form class="adjustment1">
+            
+            <label for="name">Name</label>
+            <input type="name" class="text-input" id="name" style="border-radius: 5px;">
+            
+            <label for="email">Email Address</label>
+            <input type="email" class="text-input" id="email" style="border-radius: 5px;" >
+
+            
+            <label for="contact">contact number</label>
+            <input type="contact" class="text-input" id="contact" style="border-radius: 5px;">
+
+            <label for="message">Enter Message</label>
+            <input type="message" id="message" class="text-input" style="padding: 30px; border-radius: 10px;">
+            
+
+            <button class="btn" style="font-weight: bolder;">Send</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
